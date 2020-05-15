@@ -31,6 +31,13 @@ public class HelloWorld {
         return message;
     }
 
+    public boolean addNumbers() {
+        int i = 1;
+        int j = 4;
+        int output = i + j;
+        return false;
+    }
+
     public static void main(String[] args) {
         HelloWorld helloWorld = new HelloWorld();
         System.out.println(helloWorld.formMessage());

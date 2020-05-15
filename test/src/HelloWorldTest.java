@@ -9,7 +9,6 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -41,6 +40,13 @@ public class HelloWorldTest {
         String result = helloWorldInstance.formMessage();
         System.out.println("* HelloWorldTest: test method 1 testFormMessage()");
         Assert.assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testaddNumbers() {
+        boolean expectedResult = true;
+        boolean result = helloWorldInstance.addNumbers();
+        Assert.assertEquals(expectedResult, result);
     }
 
 }
